@@ -16,20 +16,17 @@ $pill_radius: 10px;
   	margin-left: 1em;
   }
   p {
-  	color: yellow;
+  	color: #ff0;
   	margin-left: 1em;
   }
 }
 
 .home_container {
     height:300px;
-    border:5px solid #ccf;
 }
 .home_container>div {
     height:100%;
     overflow-y:auto;
-    border:5px solid #ff0;
-    padding:1em;
     box-sizing:border-box;
     -moz-box-sizing:border-box;
 }
@@ -44,6 +41,7 @@ $pill_radius: 10px;
 
 .heading_stripe {
 	background-color: #f0f0f0; 
+	border:5px solid #f0f0f0;
 	@include border-top-radius($pill_radius);
 }
 

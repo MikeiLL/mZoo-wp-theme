@@ -1,0 +1,67 @@
+/* Mixin */
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+.content-info {
+	.container {
+		
+		h4 {
+			text-align: center;
+			.globe {
+				display: inline;
+				vertical-align: text-top;
+				font-size: $font-size-h4;
+				padding-left:.4em; 
+				padding-right:.4em; 
+				}
+			@include vertical-align;
+			span { 
+				font-size: $font-size-large;
+				font-family: 'Cabin Sketch', monospace;
+				}
+			}
+		
+		.footer_nav_menu {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			text-align: center;
+			margin-bottom: 2em;
+			li {
+				display: inline;
+				list-style-type: none;
+				padding-right: 20px;
+				font-family: 'Cabin Sketch', monospace;
+				}
+			}
+			@media (min-width: $grid-float-breakpoint) {
+		h4 {
+				text-align: center;
+				.globe {
+					font-size: $font-size-h4;
+					padding-left:.4em; 
+					padding-right:.4em; 
+					}
+				@include vertical-align;
+				span { 
+					font-size: $font-size-h2;
+					}
+				}
+		
+			.footer_nav_menu {
+				margin: 0;
+				padding: 0;
+				margin-bottom: 2em;
+				li {
+					padding-right: 20px;
+					}
+				}
+  			}
+		}
+	}
