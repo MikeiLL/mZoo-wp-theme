@@ -17,13 +17,15 @@
     "bootstrap-sass-official": {
       "main": [
         "./assets/stylesheets/_bootstrap.scss",
+        "./assets/stylesheets/_bootstrap-compas.scss",
+        "./assets/stylesheets/_bootstrap-mincer.scss",
+        "./assets/stylesheets/_bootstrap-sprokets.scss",
         "./assets/javascripts/bootstrap/transition.js",
         "./assets/javascripts/bootstrap/alert.js",
         "./assets/javascripts/bootstrap/button.js",
         "./assets/javascripts/bootstrap/carousel.js",
         "./assets/javascripts/bootstrap/collapse.js",
         "./assets/javascripts/bootstrap/dropdown.js",
-        "./assets/javascripts/bootstrap/modal.js",
         "./assets/javascripts/bootstrap/tooltip.js",
         "./assets/javascripts/bootstrap/popover.js",
         "./assets/javascripts/bootstrap/scrollspy.js",

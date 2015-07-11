@@ -28,6 +28,20 @@
     'home': {
       init: function() {
         // JavaScript to be fired on the home page
+		var divs = $('.home_container>div');
+		var now = 0; // currently shown div
+		divs.hide().first().show();
+		$("a[name=next]").click(function (e) {
+			divs.eq(now).hide();
+			now = (now + 1 < divs.length) ? now + 1 : 0;
+			divs.eq(now).show(); // show next
+		});
+		$("a[name=prev]").click(function (e) {
+			divs.eq(now).hide();
+			now = (now > 0) ? now - 1 : divs.length - 1;
+			divs.eq(now).show(); // or .css('display','block');
+			//console.log(divs.length, now);
+		});
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS
@@ -73,5 +87,7 @@
 
   // Load Events
   $(document).ready(UTIL.loadEvents);
+  
+
 
 })(jQuery); // Fully reference jQuery after this point.
