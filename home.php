@@ -1,3 +1,4 @@
+<h1 class="media-zen">Media Zen Organic Outreach Organization</h1>
 <div class="home_container">
 	<div id="bp_foundation" class="container-fluid bp_foundation current">
 		<div class="row-fluid heading_stripe"><h2>Foundation</h2></div>

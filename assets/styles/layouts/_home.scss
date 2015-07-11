@@ -1,5 +1,11 @@
 $pill_radius: 10px;
 
+.media-zen {
+	font-family: 'Chango', monospace;
+	color: #999;
+	text-align: center;
+}
+
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
