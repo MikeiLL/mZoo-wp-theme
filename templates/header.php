@@ -2,27 +2,39 @@
   // This file assumes that you have included the nav walker from https://github.com/twittem/wp-bootstrap-navwalker
   // somewhere in your theme.
 ?>
-
-	<header class="banner navbar navbar-default navbar-static-top" role="banner">
-	  <div class="container">
-	  <?php
+<!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+      <?php
 		if ((has_nav_menu('primary_navigation')) && !(is_home() || is_front_page())) : ?>
-		<div class="navbar-header">
-		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-			<span class="sr-only"><?= __('Toggle navigation', 'sage'); ?></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		  </button>
-		  <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
-		</div>
-		<?php endif; ?>
-		<nav class="collapse navbar-collapse" role="navigation">
-		  <?php
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only"><?= __('Toggle navigation', 'sage'); ?></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+         <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+        </div>
+        <?php endif; ?>
+        <div id="navbar" class="collapse navbar-collapse">
+           <?php
 		  if ((has_nav_menu('primary_navigation')) && !(is_home() || is_front_page())) :
 			wp_nav_menu(['theme_location' => 'primary_navigation', 'walker' => new wp_bootstrap_navwalker(), 'menu_class' => 'nav navbar-nav']);
 		  endif;
 		  ?>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    
+    
+	<!-- <header class="banner navbar navbar-default navbar-static-top" role="banner">
+	  <div class="container">
+	  
+		
+		
+		<nav class="collapse navbar-collapse" role="navigation">
+		 
 		</nav>
 	  </div>
-	</header>
+	</header> -->

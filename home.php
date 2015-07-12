@@ -2,26 +2,28 @@
 	<div class="home_container">
 
 		<div id="bp_foundation" class="container-fluid bp_foundation current">
-			<div class="row-fluid heading_stripe"><h2>Data Deposits</h2></div>
-			<p>Invest in yourself. We help you to cultivate your company's presence in the datasphere.
-		
-			<a name="next"class="btn round orange pull-right" href="#">Here's how >></a></p>
-		</div>
-
-		<div id="bp_foundation" class="container-fluid bp_foundation current">
 			<div class="row-fluid heading_stripe"><h2>The Process</h2></div>
-			<p>A spiraling cycle cultivated over years of web application development have slowly
+			<p>A spiraling cycle cultivated over years of web application development
 			by which the needs of the client are heard, clarified, developed and refined.
 		
 			<a name="next"class="btn round orange pull-right" href="#">See how it works >></a></p>
 		</div>
 	
 		<div id="bp_foundation" class="container-fluid bp_foundation current">
-			<div class="row-fluid heading_stripe"><h2>Foundation</h2></div>
-			<p>The first thing we do is establish <em>what</em> the goals are. We determine project 
-			requirements, desires and ultimate vision.
+			<div class="row-fluid heading_stripe"><h2>First steps</h2></div>
+			<p>The first thing we do is establish <em>what</em> the goals are. 
+			We determine project requirements, desires and ultimate vision.
 		
 			<a name="next"class="btn round orange pull-right" href="#">Then what >></a></p>
+		</div>
+		
+		<div id="bp_foundation" class="container-fluid bp_foundation current">
+			<div class="row-fluid heading_stripe"><h2>Data Deposits</h2></div>
+			<p>Identify the entity and cultivate a presence in the datasphere by 
+			archiving and sharing useful information in three categories: fun, 
+			informative and introspective.
+		
+			<a name="next"class="btn round orange pull-right" href="#">Read more >></a></p>
 		</div>
 	
 		<div id="bp_foundation" class="container-fluid bp_foundation current">
@@ -52,8 +54,8 @@
 	
 		<div id="bp_foundation" class="container-fluid bp_foundation" style="display:none">
 			<div class="row-fluid heading_stripe"><h2>Open Source</h2></div>
-			<p>Benefit from the millions of ours of international development time
-			that continue to develop a host of popular libraries and frameworks
+			<p>Benefit from thousands of hours of international development time
+			that continue to develop a host of freely shared popular libraries and frameworks
 			that can meet almost any requirement.
 		
 			<a name="next"class="btn round orange pull-right" href="#">Next >></a></p>
