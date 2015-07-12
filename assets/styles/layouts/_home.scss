@@ -22,8 +22,8 @@ $pill_radius: 10px;
   	padding: 0px;
   	margin-left: 1em;
   }
-  p {
-  	color: #ff0;
+  p, ul {
+  	color: #7997A3;
   	margin-left: 1em;
   	margin-right: 1em;
   	margin-top: .8em;
@@ -46,7 +46,7 @@ $pill_radius: 10px;
 	@extend .big_pill;
 	@include border-radius($pill_radius);
 	opacity: 100%;
-	background: green;
+	background: #EAC800;
   	max-width: 80%;
   	width: 500px;
   	-webkit-transition: all 1s ease-in-out;
@@ -56,104 +56,12 @@ $pill_radius: 10px;
 }
 
 .heading_stripe {
-	background-color: #f0f0f0; 
-	border:5px solid #f0f0f0;
+	background-color: #78687E; 
+	border:5px solid #78687E;
+	color: $gray-lighter;
 	@include border-top-radius($pill_radius);
 }
 
-.btn{
-	text-decoration:none;
-	color:#333333;
-	font-size:12px;
-	font-weight:bold;
-	padding:0 15px;
-	line-height:32px;
-	height: auto;
-	display:inline-block;
-	text-align:center;
-	background-color:#DDDDDD;
-	margin: 1em;
-}
-
-.btn.red{
-	background-color:#E53C38;
-}
-
-.btn.red:hover{
-	background-color:#ea6360;
-}
-
-.btn.orange{
-	background-color:#FF8A3C;
-}
-
-.btn.orange:hover{
-	background-color:#ffa163;
-}
-
-.btn.yellow{
-	background-color:#FFF852;
-}
-
-.btn.yellow:hover{
-	background-color:#fff975;
-}
-
-.btn.green{
-	background-color:#4BC94D;
-}
-
-.btn.green:hover{
-	background-color:#6fd471;
-}
-
-.btn.blue{
-	background-color:#5DADE2;
-}
-
-.btn.blue:hover{
-	background-color:#7dbde8;
-}
-
-.btn:hover{
-	background-color:#F6F6F6;
-}
-
-.btn.round{
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-}
-
-.btn.pill{
-  -webkit-border-radius: 16px;
-  -moz-border-radius: 16px;
-  border-radius: 16px;
-}
-
-.btn-group > .btn.round:not(:first-child):not(:last-child), .btn-group > .btn.pill:not(:first-child):not(:last-child){
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-}
-
-.btn-group > .btn.round:first-child, .btn-group > .btn.pill:first-child{
-  -webkit-border-top-right-radius: 0;
-  -webkit-border-bottom-right-radius: 0;
-  -moz-border-radius-topright: 0;
-  -moz-border-radius-bottomright: 0;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.btn-group > .btn.round:last-child, .btn-group > .btn.pill:last-child{
-  -webkit-border-top-left-radius: 0;
-  -webkit-border-bottom-left-radius: 0;
-  -moz-border-radius-topleft: 0;
-  -moz-border-radius-bottomleft: 0;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
 
 .btn-group .btn + .btn{
 	border-left: 1px solid rgba(0, 0, 0, .1);
