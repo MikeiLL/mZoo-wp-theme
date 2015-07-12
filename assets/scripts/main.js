@@ -34,7 +34,7 @@
 		$("a[name=next]").click(function (e) {
 			divs.eq(now).hide();
 			now = (now + 1 < divs.length) ? now + 1 : 0;
-			divs.eq(now).show(); // show next
+			divs.eq(now).fadeTo( 100 , 1).show(); // show next
 		});
 		$("a[name=prev]").click(function (e) {
 			divs.eq(now).hide();

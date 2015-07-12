@@ -25,7 +25,9 @@ $pill_radius: 10px;
   p {
   	color: #ff0;
   	margin-left: 1em;
+  	margin-right: 1em;
   	margin-top: .8em;
+  	font-size: 1.3em;
   }
   margin-bottom: 1em;
 }
@@ -43,9 +45,14 @@ $pill_radius: 10px;
 .bp_foundation {
 	@extend .big_pill;
 	@include border-radius($pill_radius);
+	opacity: 100%;
 	background: green;
   	max-width: 80%;
   	width: 500px;
+  	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
 }
 
 .heading_stripe {
