@@ -1,4 +1,4 @@
-<footer class="content-info" role="contentinfo">
+<footer class="footer content-info" role="contentinfo">
   <div class="container">
     <?php if (!(is_home() || is_front_page())) {
     	dynamic_sidebar('sidebar-footer');
@@ -10,7 +10,4 @@
   	<span>Gulf Coast</span> <span class="globe"><i class="fa fa-globe"></i></span>
   	<span>Pensacola, Florida</span></h4>
   </div>
-  
-				
-
 </footer>
