@@ -5,18 +5,19 @@
 
 	<header class="banner navbar navbar-default navbar-static-top" role="banner">
 	  <div class="container">
-	  <?php
-		if ((has_nav_menu('primary_navigation')) && !(is_home() || is_front_page())) : ?>
 		<div class="navbar-header">
+		<?php
+		if ((has_nav_menu('primary_navigation')) && !(is_home() || is_front_page())) : ?>
 		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
 			<span class="sr-only"><?= __('Toggle navigation', 'sage'); ?></span>
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		  </button>
+		<?php endif; ?>
 		  <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
 		</div>
-		<?php endif; ?>
+		
 		<nav class="collapse navbar-collapse" role="navigation">
 		  <?php
 		  if ((has_nav_menu('primary_navigation')) && !(is_home() || is_front_page())) :
