@@ -1,4 +1,6 @@
-	<h1 class="media-zen">Media Zen Organic Outreach . Organization</h1>
+	<h1 class="media-zen">
+		<?php echo get_bloginfo ( 'description' ); ?>
+	</h1>
 	<div class="home_container">
 
 		<div id="bp_foundation" class="container-fluid bp_foundation current">
@@ -104,14 +106,6 @@
 		</div>
 
 		<div id="bp_foundation" class="container-fluid bp_foundation" style="display:none">
-			<div class="row-fluid heading_stripe"><h2>Twelve-Factor</h2></div>
-			<p>The first thing we do is establish WHAT the goals are. 
-			</p>
-		
-			<a name="next"class="btn round pink pull-right" href="#">Next >></a>
-		</div>
-
-		<div id="bp_foundation" class="container-fluid bp_foundation" style="display:none">
 			<div class="row-fluid heading_stripe"><h2>Green Hosting</h2></div>
 			<p>Our servers use 27% less power than the average server because they 
 			contain energy efficient components. A portion of hosting proceeds are donated to 
@@ -122,19 +116,12 @@
 		</div>
 
 		<div id="bp_foundation" class="container-fluid bp_foundation" style="display:none">
-			<div class="row-fluid heading_stripe"><h2>Flexible</h2></div>
-			<p>The first thing we do is establish WHAT the goals are. 
+			<div class="row-fluid heading_stripe"><h2>Transparent</h2></div>
+			<p>You can expect to have as clear an understanding of what's happening 
+			on the back end as you have interest in hearing (and patience for).
 			</p>
 		
-			<a name="next"class="btn round pink pull-right" href="#">Next >></a>
-		</div>
-
-		<div id="bp_foundation" class="container-fluid bp_foundation" style="display:none">
-			<div class="row-fluid heading_stripe"><h2>Sustainable</h2></div>
-			<p>The first thing we do is establish WHAT the goals are. 
-			</p>
-		
-			<a name="next"class="btn round pink pull-right" href="#">Next >></a>
+			<a href="/contact" name="next"class="btn round pink pull-right" href="#">Contact me >></a>
 		</div>
 	</div>
 
