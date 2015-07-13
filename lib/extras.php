@@ -32,20 +32,20 @@ function excerpt_more() {
 }
 add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
 
-/** BOF CUSTOM POST TYPE
+//* BOF CUSTOM POST TYPE
 // Our custom post type function
 function create_posttype() {
 
-	register_post_type( 'instruments',
+	register_post_type( 'teasers',
 	// CPT Options
 		array(
 			'labels' => array(
-				'name' => __( 'Instruments' ),
-				'singular_name' => __( 'Instrument' )
+				'name' => __( 'teasers' ),
+				'singular_name' => __( 'Teaser' )
 			),
 			'public' => true,
 			'has_archive' => true,
-			'rewrite' => array('slug' => 'instruments'),
+			'rewrite' => array('slug' => 'teasers'),
 			'menu_icon'   => 'dashicons-star-empty',
 		)
 	);
@@ -61,9 +61,9 @@ function custom_post_type() {
 
 // Set UI labels for Custom Post Type
 	$labels = array(
-		'name'                => _x( 'Instruments', 'Post Type General Name', 'sage' ),
+		'name'                => _x( 'teasers', 'Post Type General Name', 'sage' ),
 		'singular_name'       => _x( 'Instrument', 'Post Type Singular Name', 'sage' ),
-		'menu_name'           => __( 'Instruments', 'sage' ),
+		'menu_name'           => __( 'teasers', 'sage' ),
 		'parent_item_colon'   => __( 'Parent Instrument', 'sage' ),
 		'all_items'           => __( 'All Instruments', 'sage' ),
 		'view_item'           => __( 'View Instrument', 'sage' ),
@@ -79,7 +79,7 @@ function custom_post_type() {
 // Set other options for Custom Post Type
 	
 	$args = array(
-		'label'               => __( 'instruments', 'sage' ),
+		'label'               => __( 'teasers', 'sage' ),
 		'description'         => __( 'New instruments to showcase', 'sage' ),
 		'labels'              => $labels,
 		// Features this CPT supports in Post Editor
@@ -105,7 +105,7 @@ function custom_post_type() {
 	);
 	
 	// Registering your Custom Post Type
-	register_post_type( 'instruments', $args );
+	register_post_type( 'teasers', $args );
 
 }
 
@@ -120,7 +120,7 @@ add_action( 'pre_get_posts', __NAMESPACE__ . '\\add_my_post_types_to_query' );
 
 function add_my_post_types_to_query( $query ) {
 	if ( is_home() && $query->is_main_query() )
-		$query->set( 'post_type', array( 'post', 'instruments' ) );
+		$query->set( 'post_type', array( 'post', 'teasers' ) );
 	return $query;
 }
 //*EOF CUSTOM POST TYPE
