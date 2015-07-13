@@ -4,3 +4,19 @@
 	font-family: 'Chango', monospace;
 	font-size: 15px;
 	}
+	
+.two-col-pitch {
+	border: 1px solid $brand-primary;
+	margin-bottom: 1em;
+	}
+	
+@media (min-width: 768px ) {
+  .row {
+      position: relative;
+  }
+
+  .bottom-align-text {
+    position: absolute;
+    bottom: 0;
+  }
+}
