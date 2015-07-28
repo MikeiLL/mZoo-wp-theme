@@ -7,7 +7,7 @@
 			<?php if (get_post_type() == 'teasers') {?>
 			<div id="bp_foundation" class="container-fluid bp_foundation current">
 				<div class="row-fluid heading_stripe">
-					<h2><?php get_template_part('templates/page', 'header'); ?></h2>
+					<?php the_title( '<h2>', '</h2>' ); ?>
 				</div>
 				<p><?php get_template_part('templates/content', 'page'); ?></p>
 				<a name="next" class="btn round pink pull-right" href="#">See how it works >></a>
