@@ -30,21 +30,7 @@
 
 		
 	</div>
-
-
-
-
-
-<?php
-function mz_pr($data){
-	echo "<pre>";
-	print_r($data);
-	echo "</pre>";
-	die();
-}
-?>
 		
-	</div>
 
 
 
