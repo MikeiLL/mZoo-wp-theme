@@ -7,7 +7,7 @@
   <?php get_search_form(); ?>
 <?php endif; ?>
 <?php
-$args = array( 'post_type' => 'post', 'posts_per_page' => 10 );
+$args = array( 'post_type' => 'post' );
 $zoo_loop = new WP_Query( $args );
 ?>
 
