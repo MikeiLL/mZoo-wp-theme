@@ -1,3 +1,5 @@
+<?php use Roots\Sage\Extras; ?>
+
 <?php get_template_part('templates/page', 'header'); ?>
 
 <?php if (!have_posts()) : ?>
@@ -7,7 +9,7 @@
   <?php get_search_form(); ?>
 <?php endif; ?>
 <?php
-$args = array( 'post_type' => 'post' );
+$args = array( 'post_type' => 'post', 'paged' => $paged );
 $zoo_loop = new WP_Query( $args );
 ?>
 
@@ -17,3 +19,4 @@ $zoo_loop = new WP_Query( $args );
 
 <?php the_posts_navigation(); ?>
 
+  
