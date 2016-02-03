@@ -59,10 +59,11 @@ $pill_radius: 10px;
 	-moz-transition: all 1s ease-in-out;
 	-o-transition: all 1s ease-in-out;
 	transition: all 1s ease-in-out;
+	margin-bottom:5rem;
 }
 
 .heading_stripe {
-	background-color: #78687E; 
+	background-color: #78687E;
 	border:5px solid #78687E;
 	color: $gray-lighter;
 	@include border-top-radius($pill_radius);
