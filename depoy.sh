@@ -6,4 +6,4 @@ else
     echo No gulp
 fi
 
-rsync -avP dist lib screenshot.png templates *.php *.css mzoo:public_html/wpZoo/wp-content/themes/bludog
+rsync -avP dist lib screenshot.png templates *.php *.css mzoo:public_html/wpZoo/wp-content/themes/mZoo
