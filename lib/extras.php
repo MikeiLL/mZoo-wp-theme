@@ -75,21 +75,21 @@ function custom_post_type() {
 		'not_found'           => __( 'Not Found', 'sage' ),
 		'not_found_in_trash'  => __( 'Not found in Trash', 'sage' ),
 	);
-	
+
 // Set other options for Custom Post Type
-	
+
 	$args = array(
 		'label'               => __( 'teasers', 'sage' ),
 		'description'         => __( 'New instruments to showcase', 'sage' ),
 		'labels'              => $labels,
 		// Features this CPT supports in Post Editor
 		'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
-		// You can associate this CPT with a taxonomy or custom taxonomy. 
+		// You can associate this CPT with a taxonomy or custom taxonomy.
 		'taxonomies'          => array( 'genres' ),
 		/* A hierarchical CPT is like Pages and can have
 		* Parent and child items. A non-hierarchical CPT
 		* is like Posts.
-		*/	
+		*/
 		'hierarchical'        => false,
 		'public'              => true,
 		'show_ui'             => true,
@@ -99,19 +99,19 @@ function custom_post_type() {
 		'menu_position'       => 5,
 		'can_export'          => true,
 		'has_archive'         => true,
-		'exclude_from_search' => false,
+		'exclude_from_search' => true,
 		'publicly_queryable'  => true,
 		'capability_type'     => 'page',
 	);
-	
+
 	// Registering your Custom Post Type
 	register_post_type( 'teasers', $args );
 
 }
 
 /* Hook into the 'init' action so that the function
-* Containing our post type registration is not 
-* unnecessarily executed. 
+* Containing our post type registration is not
+* unnecessarily executed.
 */
 
 add_action( 'init',  __NAMESPACE__ . '\\custom_post_type', 0 );
@@ -129,12 +129,12 @@ function add_my_post_types_to_query( $query ) {
 function register_mZoo_menu() {
  register_nav_menus(
 	array(
-	'footer-menu' => __( 'Footer Menu' )	
+	'footer-menu' => __( 'Footer Menu' )
 	)
-	); 
+	);
 }
 
-add_action( 'init', __NAMESPACE__ . '\register_mZoo_menu' ); 
+add_action( 'init', __NAMESPACE__ . '\register_mZoo_menu' );
 //*
 
 /*
@@ -143,7 +143,7 @@ add_action( 'init', __NAMESPACE__ . '\register_mZoo_menu' );
 */
 function pagination_nav() {
     global $wp_query;
- 
+
     if ( $wp_query->max_num_pages > 1 ) { ?>
         <nav class="pagination" role="navigation">
             <div class="nav-previous"><?php next_posts_link( '&larr; Older posts' ); ?></div>
@@ -152,7 +152,7 @@ function pagination_nav() {
 <?php }
 }
 
-/* 
+/*
  * Pagination bar to call like:
   <nav class="pagination">
   <?php Extras\pagination_bar(); ?>
@@ -160,12 +160,12 @@ function pagination_nav() {
 */
 function pagination_bar() {
     global $wp_query;
- 
+
     $total_pages = $wp_query->max_num_pages;
- 
+
     if ($total_pages > 1){
         $current_page = max(1, get_query_var('paged'));
- 
+
         echo paginate_links(array(
             'base' => get_pagenum_link(1) . '%_%',
             'format' => '/page/%#%',
