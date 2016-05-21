@@ -57,7 +57,7 @@ add_action( 'init',  __NAMESPACE__ . '\\create_posttype' );
 * Create Custom Post Type
 */
 
-function custom_post_type() {
+function mz_theme_custom_post_type() {
 
 // Set UI labels for Custom Post Type
 	$labels = array(
@@ -114,7 +114,7 @@ function custom_post_type() {
 * unnecessarily executed.
 */
 
-add_action( 'init',  __NAMESPACE__ . '\\custom_post_type', 0 );
+add_action( 'init',  __NAMESPACE__ . '\\mz_theme_custom_post_type', 0 );
 
 add_action( 'pre_get_posts', __NAMESPACE__ . '\\add_my_post_types_to_query' );
 
